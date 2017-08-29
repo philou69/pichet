@@ -1,0 +1,151 @@
+/* style générale*/
+body{
+    color: #3aafb9;
+}
+/* Class des div occupant tout la hauteur de l'écran avec un padding de hauteur de la navbar */
+.full-screen{
+    min-height: calc(100vh - 60px);
+    padding-top: 60px;
+}
+
+#first{
+    background: url("/bundles/app/images/fond_ecran.png") no-repeat fixed;
+}
+
+#story{
+    background: url("/bundles/app/images/story.png") no-repeat fixed;
+}
+
+#career{
+    background: url("/bundles/app/images/career.png") no-repeat fixed;
+}
+
+#projects{
+    background: url("/bundles/app/images/projects.png") no-repeat fixed;
+}
+
+#contact{
+    background: url("/bundles/app/images/contact.png") no-repeat fixed;
+}
+#intro *{
+    color: #3aafb9;
+}
+
+.text-center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Couleur d'écriture */
+h1 {
+    color: #78cdd7;
+}
+.right ul{
+    list-style: none;
+}
+
+a.button{
+    background-color: #78cdd7;
+    color: #fffffa !important;
+    border-radius: 2px;
+    text-decoration: none;
+    width: 150px;
+    height: 30px;
+    margin:auto;
+    padding: 5px 10px;
+}
+a.button:hover{
+    background-color: #247b7b;
+}
+a{
+    text-decoration: none;
+    color: #0d5c63;
+}
+a:hover{
+    color: #78cdd7;
+}
+#intro>*
+{
+    text-align: center;
+    margin-top: 10%;
+}
+
+#more-projects{
+    margin-top: 10%;
+ }
+.inline-button{
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100px !important;
+}
+.text-center-horizontal{
+    text-align: center;
+}
+#contact *{
+    text-align: center;
+}
+@media screen and (max-width: 576px){
+    .container{
+        width: 90%;
+        margin: auto;
+    }
+    #first, #story, #career, #projects, #contact{
+        background-size: auto 180px;
+        background-position-y: 60px;
+        background-position-x: center;
+        background-attachment: initial;
+    }
+
+    .right{
+        display: flex;
+        flex-direction: row;
+    }
+    .right>*{
+        margin-top: 180px;
+        width: 100%;
+    }
+    #intro-name{
+        font-size: 25px;
+    }
+    #intro-status{
+        font-size: 50px;
+    }
+}
+
+@media screen and (min-width: 577px){
+    .container{
+        width: 80%;
+        margin: auto;
+    }
+
+    #first, #story, #career, #projects, #contact{
+        background-size: auto 60%;
+        background-position-x: 30%;
+        background-position-y: center;
+    }
+
+    .right{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+    }
+    .full-screen>*{
+        max-width: 40%;
+    }
+
+    #intro-name{
+        font-size: 45px;
+        text-align: center;
+    }
+    #intro-status{
+        font-size: 60px;
+    }
+    #contact>div{
+        width: 40%;
+    }
+}
