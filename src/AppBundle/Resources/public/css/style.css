@@ -5,6 +5,10 @@ body{
 div{
 
 }
+.container{
+    width: 90%;
+    margin: auto;
+}
 /* Class des div occupant tout la hauteur de l'écran avec un padding de hauteur de la navbar */
 .full-screen{
     min-height: calc(100vh - 60px);
@@ -104,10 +108,6 @@ a:hover{
     padding-left: 0;
 }
 @media screen and (max-width: 767px){
-    .container{
-        width: 90%;
-        margin: auto;
-    }
     #first, #story, #career, #projects, #contact, #error{
         background-size: auto 180px;
         background-position-y: 60px;
@@ -135,25 +135,35 @@ a:hover{
 @media screen and (min-width: 768px) and (max-width: 1200px) {
 
     #first, #story, #career, #projects, #contact, #error{
-        background-size: auto 55%;
-        background-position-x: 10%;
+        background-size: auto 30%;
+        background-position-x: 25%;
+        background-position-y: center;
+    }
+    .full-screen>*{
+        max-width: 35%;
+    }
+    #intro>div{
+        font-size: 35px ;
+    }
+    a.button{
+        width: 95px;
+    }
+    .social{
+        width: 35px !important;
+    }
+}
+@media screen and (min-width: 1200px){
+    #first, #story, #career, #projects, #contact, #error{
+        background-size: auto 45%;
+        background-position-x: 20%;
         background-position-y: center;
     }
     .full-screen>*{
         max-width: 45%;
     }
-    #intro>div{
-        font-size: 35px ;
-    }
-}
-@media screen and (min-width: 1200px){
-    #first, #story, #career, #projects, #contact, #error{
-        background-size: auto 60%;
-        background-position-x: 20%;
-        background-position-y: center;
-    }
-    .full-screen>*{
-        max-width: 50%;
+    .container{
+        width: 80%;
+        margin: auto;
     }
 }
 @media screen and (min-width: 768px){
@@ -164,11 +174,6 @@ a:hover{
         justify-content: center;
         align-items: flex-end;
     }
-    .container{
-        width: 80%;
-        margin: auto;
-    }
-
     #intro-name{
         font-size: 45px;
         text-align: center;

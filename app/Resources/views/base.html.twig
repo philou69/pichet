@@ -6,11 +6,12 @@
         <meta name="description" content>
         <meta name="author" content="Philippe Pichet">
         <title>{% block title %}Philippe Pichet{% endblock %}</title>
+        <link rel="icon" href="{{ asset("bundles/app/images/logo.ico") }}" type="image/-x-icon">
         {% block stylesheets %}{% endblock %}
         {% block link %}
             {% include 'default/link.css.html.twig' %}
         {% endblock %}
-        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}"/>
+        {#<link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}"/>#}
     </head>
     <body class="container">
         {% include 'default/navbar.html.twig' %}
