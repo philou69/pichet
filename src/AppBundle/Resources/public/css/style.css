@@ -2,6 +2,9 @@
 body{
     color: #3aafb9;
 }
+div{
+
+}
 /* Class des div occupant tout la hauteur de l'écran avec un padding de hauteur de la navbar */
 .full-screen{
     min-height: calc(100vh - 60px);
@@ -27,6 +30,9 @@ body{
 #contact{
     background: url("/bundles/app/images/contact.png") no-repeat fixed;
 }
+#error{
+    background: url("/bundles/app/images/error.png") no-repeat fixed;
+}
 #intro *{
     color: #3aafb9;
 }
@@ -41,6 +47,9 @@ body{
 /* Couleur d'écriture */
 h1 {
     color: #78cdd7;
+}
+p{
+    font-size: 21px;
 }
 .right ul{
     list-style: none;
@@ -80,7 +89,9 @@ a:hover{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100px !important;
+}
+.social{
+    width: 40px !important;
 }
 .text-center-horizontal{
     text-align: center;
@@ -88,16 +99,19 @@ a:hover{
 #contact *{
     text-align: center;
 }
-@media screen and (max-width: 576px){
+
+.full-screen ul {
+    padding-left: 0;
+}
+@media screen and (max-width: 767px){
     .container{
         width: 90%;
         margin: auto;
     }
-    #first, #story, #career, #projects, #contact{
+    #first, #story, #career, #projects, #contact, #error{
         background-size: auto 180px;
         background-position-y: 60px;
         background-position-x: center;
-        background-attachment: initial;
     }
 
     .right{
@@ -114,19 +128,35 @@ a:hover{
     #intro-status{
         font-size: 50px;
     }
-}
-
-@media screen and (min-width: 577px){
-    .container{
-        width: 80%;
-        margin: auto;
+    .full-screen>*{
+        background-color: white;
     }
+}
+@media screen and (min-width: 768px) and (max-width: 1200px) {
 
-    #first, #story, #career, #projects, #contact{
-        background-size: auto 60%;
-        background-position-x: 30%;
+    #first, #story, #career, #projects, #contact, #error{
+        background-size: auto 55%;
+        background-position-x: 10%;
         background-position-y: center;
     }
+    .full-screen>*{
+        max-width: 45%;
+    }
+    #intro>div{
+        font-size: 35px ;
+    }
+}
+@media screen and (min-width: 1200px){
+    #first, #story, #career, #projects, #contact, #error{
+        background-size: auto 60%;
+        background-position-x: 20%;
+        background-position-y: center;
+    }
+    .full-screen>*{
+        max-width: 50%;
+    }
+}
+@media screen and (min-width: 768px){
 
     .right{
         display: flex;
@@ -134,8 +164,9 @@ a:hover{
         justify-content: center;
         align-items: flex-end;
     }
-    .full-screen>*{
-        max-width: 40%;
+    .container{
+        width: 80%;
+        margin: auto;
     }
 
     #intro-name{

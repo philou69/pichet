@@ -1,0 +1,12 @@
+{% extends '@app/base.html.twig' %}
+{% block body %}
+    <div id="error" class="full-screen right">
+        <div class="">
+            <h1>Une erreur est survenu</h1>
+            <p>
+                Le serveur vient de retourner l'erreur {{ status_code }}. <br>
+                L'erreur est {{ status_text }}.
+            </p>
+        </div>
+    </div>
+{% endblock %}

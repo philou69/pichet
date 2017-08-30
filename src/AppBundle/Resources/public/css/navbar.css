@@ -33,7 +33,7 @@ header li a:hover{
 
 
 /* Style pour ecran de smartphone/tablette*/
-@media screen and ( max-width: 576px){
+@media screen and ( max-width: 767px){
     header{
         min-height: 50px;
     }
@@ -67,7 +67,7 @@ header li a:hover{
 }
 
 /* Style pour ecran de pc*/
-@media screen and ( min-width: 577px){
+@media screen and ( min-width: 768px){
     header{
         height: 60px;
     }
@@ -89,8 +89,3 @@ header li a:hover{
     }
 }
 
-@media screen and (min-width: 576px) and (max-width: 960px){
-    header ul{
-        width: 75%;
-    }
-}
