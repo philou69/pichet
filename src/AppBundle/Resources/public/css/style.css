@@ -1,6 +1,9 @@
 /* style générale*/
 body{
     color: #3aafb9;
+    font-family: brandon-grotesque, sans-serif;
+    font-style: normal;
+    font-weight: 300;
 }
 div{
 
@@ -53,7 +56,7 @@ h1 {
     color: #78cdd7;
 }
 p{
-    font-size: 21px;
+    text-align: justify;
 }
 .right ul{
     list-style: none;
@@ -93,6 +96,7 @@ a:hover{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: auto!important;
 }
 .social{
     width: 40px !important;
@@ -126,30 +130,63 @@ a:hover{
         font-size: 25px;
     }
     #intro-status{
-        font-size: 50px;
+        font-size: 45px;
     }
     .full-screen>*{
         background-color: white;
+    }
+
+    #story>p{
+        font-size: 21px;
+    }
+    #career p, #projects p {
+        font-size: 15px;
+    }
+    #career h2, #projects h2 {
+        font-size: 25px;
+    }
+    #contact h2{
+        font-size: 45px;
+        font-weight: 500;
+        font-style: italic;
+    }
+    #contact a.button{
+        width: auto;
     }
 }
 @media screen and (min-width: 768px) and (max-width: 1200px) {
 
     #first, #story, #career, #projects, #contact, #error{
         background-size: auto 30%;
-        background-position-x: 25%;
+        background-position-x: 10%;
         background-position-y: center;
     }
     .full-screen>*{
-        max-width: 35%;
+        width: 50%;
     }
-    #intro>div{
+    #intro-name{
         font-size: 35px ;
     }
     a.button{
-        width: 95px;
+        width: 110px;
     }
     .social{
         width: 35px !important;
+    }
+
+    #story>p{
+        font-size: 25px;
+    }
+    #career p, #projects p {
+        font-size: 20px;
+    }
+    #career h2, #projects h2 {
+        font-size: 30px;
+    }
+    #contact h2{
+        font-size: 50px;
+        font-weight: 500;
+        font-style: italic;
     }
 }
 @media screen and (min-width: 1200px){
@@ -159,11 +196,25 @@ a:hover{
         background-position-y: center;
     }
     .full-screen>*{
-        max-width: 45%;
+        width: 45%;
     }
     .container{
         width: 80%;
         margin: auto;
+    }
+    #story>p{
+        font-size: 35px;
+    }
+    #career p, #projects p {
+        font-size: 25px;
+    }
+    #career h2, #projects h2 {
+        font-size: 35px;
+    }
+    #contact h2{
+        font-size: 60px;
+        font-weight: 500;
+        font-style: italic;
     }
 }
 @media screen and (min-width: 768px){
@@ -179,9 +230,6 @@ a:hover{
         text-align: center;
     }
     #intro-status{
-        font-size: 60px;
-    }
-    #contact>div{
-        width: 40%;
+        font-size: 55px;
     }
 }

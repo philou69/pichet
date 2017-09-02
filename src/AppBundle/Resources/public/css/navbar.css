@@ -91,6 +91,6 @@ header li a:hover{
 
 @media screen and (min-width: 768px) and (max-width: 1200px){
     header ul{
-        width: 60%;
+        width: 65%;
     }
 }
