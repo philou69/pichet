@@ -89,7 +89,7 @@ a:hover{
 }
 
 #more-projects{
-    margin-top: 10%;
+    margin-top: 10px;
  }
 .inline-button{
     display: inline-flex;
@@ -111,19 +111,21 @@ a:hover{
 .full-screen ul {
     padding-left: 0;
 }
+
+.right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
 @media screen and (max-width: 767px){
     #first, #story, #career, #projects, #contact, #error{
         background-size: auto 180px;
         background-position-y: 60px;
         background-position-x: center;
     }
-
-    .right{
-        display: flex;
-        flex-direction: row;
-    }
     .right>*{
-        margin-top: 180px;
+        margin-top: 185px;
         width: 100%;
     }
     #intro-name{
@@ -137,13 +139,13 @@ a:hover{
     }
 
     #story>p{
-        font-size: 21px;
+        font-size: 19px;
     }
     #career p, #projects p {
         font-size: 15px;
     }
     #career h2, #projects h2 {
-        font-size: 25px;
+        font-size: 20px;
     }
     #contact h2{
         font-size: 45px;
@@ -152,6 +154,12 @@ a:hover{
     }
     #contact a.button{
         width: auto;
+    }
+    #contact>div{
+      height: calc(100vh - 60px - 185px);
+    }
+    ul h2{
+      margin: 10px 0;
     }
 }
 @media screen and (min-width: 768px) and (max-width: 1200px) {
@@ -203,7 +211,7 @@ a:hover{
         margin: auto;
     }
     #story>p{
-        font-size: 35px;
+        font-size: 25px;
     }
     #career p, #projects p {
         font-size: 25px;
@@ -218,13 +226,10 @@ a:hover{
     }
 }
 @media screen and (min-width: 768px){
-
     .right{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
         align-items: flex-end;
     }
+
     #intro-name{
         font-size: 45px;
         text-align: center;
